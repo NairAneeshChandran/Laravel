@@ -1,0 +1,182 @@
+{
+	"id": "c3b3df57-f4aa-4321-a0cf-bbd5c90940d6",
+	"name": "Test Car Data",
+	"description": "",
+	"order": [
+		"1a4ee506-ce2c-bfcf-7934-f5ba90fd90e8",
+		"82f333a1-d56a-4640-cd7a-8adbd12dba74",
+		"98f7c8c9-6280-55d4-6b01-f23a924fb50d",
+		"1490473a-de3c-b79f-c148-eb113da6b0a2"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1596580947987,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "1490473a-de3c-b79f-c148-eb113da6b0a2",
+			"headers": "",
+			"headerData": [],
+			"url": "http://127.0.0.1:8000/api/items",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "id",
+					"value": "2",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1596647955960,
+			"name": "Fourth API",
+			"description": "Get an item by id that includes the price and user id of the highest bid",
+			"collectionId": "c3b3df57-f4aa-4321-a0cf-bbd5c90940d6",
+			"responses": []
+		},
+		{
+			"id": "1a4ee506-ce2c-bfcf-7934-f5ba90fd90e8",
+			"headers": "",
+			"headerData": [],
+			"url": "http://127.0.0.1:8000/api/item",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "c3b3df57-f4aa-4321-a0cf-bbd5c90940d6",
+			"data": [
+				{
+					"key": "categoryid",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "Test1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "minprice",
+					"value": "12",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Item Creation",
+			"description": "This API use for create the Item.",
+			"descriptionFormat": "html",
+			"time": 1596581259517,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "82f333a1-d56a-4640-cd7a-8adbd12dba74",
+			"headers": "",
+			"headerData": [],
+			"url": "http://127.0.0.1:8000/api/categories",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "c3b3df57-f4aa-4321-a0cf-bbd5c90940d6",
+			"data": [
+				{
+					"key": "categoryid",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "Rest",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "minprice",
+					"value": "12",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Second API",
+			"description": "Get a list of categories sorted by name, with items sorted by price",
+			"descriptionFormat": "html",
+			"time": 1596631871480,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "98f7c8c9-6280-55d4-6b01-f23a924fb50d",
+			"headers": "",
+			"headerData": [],
+			"url": "http://127.0.0.1:8000/api/bid",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "c3b3df57-f4aa-4321-a0cf-bbd5c90940d6",
+			"data": [
+				{
+					"key": "itemid",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "userid",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "bidamount",
+					"value": "19",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Third API",
+			"description": "Make a bid for the item ",
+			"descriptionFormat": "html",
+			"time": 1596646845373,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
